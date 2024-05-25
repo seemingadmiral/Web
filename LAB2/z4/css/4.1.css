@@ -1,0 +1,16 @@
+.img1 {
+    background-image: url("https://raw.githubusercontent.com/erv1988/Web-development-tasks-v2024/master/02/img/mosaic.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+}
+.img2 {
+    background-image: url("https://raw.githubusercontent.com/erv1988/Web-development-tasks-v2024/master/02/img/mosaic.jpg");
+    background-repeat: repeat;
+    background-size: 5%;
+}
+body {
+    background-color: blue;
+}

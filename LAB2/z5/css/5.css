@@ -1,0 +1,51 @@
+.b-blue {
+    background: blue;
+}
+.myBox {
+	width: 50px;
+	height: 50px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 190px;
+	padding-bottom: 50px;
+
+    background: rgb(189, 189, 189);
+	background-image: url(https://cdn.fishki.net/upload/post/2018/01/06/2476212/3-00.jpg?raw=true);
+	background-position-x: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.card {
+	width: 150px;
+	height: 240px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 240px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+}
+
+.card:after {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.spades,
+.spades:after {
+	content: "\2664";
+	color: black;
+}
+
+.heart,
+.heart:after {
+	content: "\2661";
+	color: red;
+}
+#button1 {
+	background-color: #4caf50; /* Green */
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px;
+}
