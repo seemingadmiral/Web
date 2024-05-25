@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Привет мир</title>
+    </head>
+    <body>
+        <p><b><h1>Привет мир</h1></b></p>
+        <p><i>Давно выявлено,</i> что при оценке дизайна и композиции читаемый текст мешает соередоточнтьея.</p>
+        <p><br><strong>Lorem Ipsum</strong> используют потому,</br>что тот обеспечивает более или менее стандартное <u>заполнение шаблона</u>, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации.</p>
+        <p><b><h2>Список покупок:</h2></b></p>
+        <ul>
+            <li>Хлеб</li>
+            <li>Молоко</li>
+            <li>Картошка</li>
+        </ul>
+        <p><b><h2>Инструкция:</h2></b></p>
+        <ol>
+            <li>Вставить батарейки в пульт</li>
+            <li>Нажать кнопку ВКЛ</li>
+        </ol>
+        <dl>
+            <dt>Молоко</dt>
+            <dd>1 литр</dd>
+            <dt>Картошка</dt>
+            <dd>2 кг</dd>
+        </dl>
+        <img src="img/1.jpeg" Width="200" Height="150">
+        <a href = "files/1.7z" download = "nevergiveup">Скачать архив</a> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="400" width="450">
+            <path d="M100 350 250 50m0 0 150 300" stroke="red" stroke-width="3" fill="none" />
+            <path d="M175 200h150" stroke="green" stroke-width="3" fill="none" />
+            <path d="M100 350q150-300 300 0" stroke="#00f" stroke-width="5" fill="none" />
+            <!-- Mark relevant points -->
+            <g stroke="#000" stroke-width="3">
+              <circle cx="100" cy="350" r="3" />
+              <circle cx="250" cy="50" r="3" />
+              <circle cx="400" cy="350" r="3" />
+            </g>
+            <!-- Label the points -->
+            <g font-size="30" font-family="sans-serif" text-anchor="middle">
+              <text x="100" y="350" dx="-30">A</text>
+              <text x="250" y="50" dy="-10">B</text>
+              <text x="400" y="350" dx="30">C</text>
+            </g>
+        </svg>
+        <!--круг-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="400">
+            <circle cx="100" cy="100" r="75" fill="blue" stroke="red" stroke-width="2" opacity="0.2"/>
+        </svg>
+        <!--прямоугольник-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="160" width="400">
+            <rect x="50" y="20" width="70" height="50" fill="red" stroke="blue" stroke-width="2" opacity="0.9"/>
+        </svg>
+        <!--полигон + звезда-->
+        <svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            fill="yellow" stroke="red" stroke-width="2" opacity="0.8"/>
+        </svg>
+        <!--текст-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="400">
+            <text x="50" y="100" font-family="arial" font-size="50" fill="green" opacity="0.9">WEB</text>
+        </svg>
+        <!--кривая произвольной формы-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="400">
+            <path d="M50 50 C100 20 200 20 250 50 S400 100 400 150" fill="none" stroke="black" stroke-width="3" opacity="0.6" />
+        </svg>
+        <!--комбинация фигур с наложением-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="400">
+            <rect x="50" y="50" width="150" height="100" fill="yellow" opacity="0.6" />
+            <circle cx="150" cy="100" r="50" fill="red" />
+        </svg>
+    </body>
+</html>
