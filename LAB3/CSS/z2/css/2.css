@@ -1,0 +1,10 @@
+img {
+    position: absolute;
+    z-index: 1;
+}
+
+p {
+    z-index: 2;
+    position: absolute;
+    color: white;
+}
