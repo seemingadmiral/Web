@@ -1,0 +1,143 @@
+html, body, #canvas, #score-panel {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  text-align: center;
+}
+
+#canvas #score-panel {
+  width: 180px;
+  height: 53px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 23px;
+  text-align: center;
+}
+
+#canvas #score-panel li:last-child {
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.restart {
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .restart i {
+    font-size: 24px;
+    margin: 15px;
+  }
+
+.tower {
+  width: 115px;
+  height: 117px;
+  border-bottom: 5px solid #000000;
+  border-radius: 7px;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0 25px 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tower#tower-3 {
+  margin: 0;
+}
+
+.tower:before {
+  width: 4px;
+  height: 116px;
+  content: "";
+  display: block;
+  background: #000000;
+  position: absolute;
+  bottom: -2px;
+  left: calc(50% - 2px);
+  z-index: 10;
+  border-radius: 30px;
+}
+
+.disk {
+  list-style: none;
+  height: 15px;
+  display: block;
+  font-size: 0;
+  z-index: 20;
+}
+
+.disk.hold {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.disk-1 {
+  width: 20%;
+  background-color: #ccee0a;
+}
+
+.disk-2 {
+  width: 40%;
+  background-color: #673ab7;
+}
+
+.disk-3 {
+  width: 60%;
+  background-color: #3f51b5;
+}
+
+.disk-4 {
+  width: 80%;
+  background-color: #00bcd4;
+}
+
+.disk-5 {
+  width: 100%;
+  background-color: #eb4504;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ханойская башня</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="canvas">
+        <div class="controls">
+            <div class="restart" aria-label="Restart Game">
+                <i class="fas fa-redo"></i>
+            </div>
+            <label for="disk-num">Количество дисков: </label>
+            <select id="disk-num">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="curtain" aria-hidden="true"></div>
+        <ul id="score-panel" aria-label="Score Panel">
+                <p><span id="moves-num"></span><span> Ходы</span></p>
+            <li>
+                <p><span id="hint"></span></p>
+            </li>
+        </ul>
+        <ul class="tower" id="tower-1" aria-label="Башня 1"></ul>
+        <ul class="tower" id="tower-2" aria-label="Башня 2"></ul>
+        <ul class="tower" id="tower-3" aria-label="Башня 3"></ul>
+    </div>
+    
+  <script src="js/script.js"></script>
+</body>
+</html>
